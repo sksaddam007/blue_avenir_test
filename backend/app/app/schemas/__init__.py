@@ -7,3 +7,4 @@ from .episode import Episode, EpisodeCreate, EpisodeInDB, EpisodeUpdate
 from .reward import Reward, RewardCreate, RewardInDB, RewardUpdate
 from .product import Product, ProductCreate, ProductInDB, ProductUpdate
 from .predict import Predict, PredictCreate, PredictInDB, PredictUpdate
+from .github import Repo, RepoCreate, RepoInDB, RepoUpdate
