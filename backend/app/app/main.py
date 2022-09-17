@@ -14,7 +14,7 @@ from app.core.config import settings
 #                    instance_port=rest_port)
 
 app = FastAPI(
-    title=settings.PROJECT_NAME, openapi_url=f"{settings.API_V1_STR}/openapi.json"
+    title=settings.PROJECT_NAME, openapi_url="/v3/api-docs"
 )
 
 # Set all CORS enabled origins
@@ -27,4 +27,4 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_headers=["*"],
     )
 
-app.include_router(api_router, prefix=settings.API_V1_STR)
+app.include_router(api_router)

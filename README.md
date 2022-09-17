@@ -1,5 +1,32 @@
 # blue_avenir_test
 
+## Sidecar Requirements
+
+Python 3.9
+Postgres
+
+## Sidecar Run Instructions
+
+create a virtual enviroment and use it to run the application
+
+```cmd
+set PYTHONPATH=.
+cd blue_avenir_test/backend/app
+pip intall -r ../requirements.txt
+pip install gitpython
+pip install fastapi_health
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+```bash
+export PYTHONPATH=.
+cd blue_avenir_test/backend/app
+pip intall -r ../requirements.txt
+pip install gitpython
+pip install fastapi_health
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
 ## Backend Requirements
 
 * [Docker](https://www.docker.com/).
